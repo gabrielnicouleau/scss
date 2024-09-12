@@ -1,0 +1,46 @@
+@import "style.css";
+@keyframes alerteRouge {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes alerteVerte {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.alerte-verte, .alerte-rouge {
+  text-align: center;
+  border: 3px solid blue;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 1px;
+  color: whitesmoke;
+}
+
+.alerte-verte, .alerte-rouge {
+  transition: 2s ease-in-out;
+}
+.alerte-verte:hover, .alerte-rouge:hover {
+  transform: scale(1.5);
+}
+
+.alerte-rouge {
+  background-color: red;
+  animation: alerteRouge 3s;
+}
+
+.alerte-verte {
+  background-color: green;
+  animation: alerteVerte 3s;
+}
+
+#app h1 {
+  text-align: center;
+}/*# sourceMappingURL=heritages.css.map */

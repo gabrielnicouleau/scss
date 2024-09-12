@@ -1,0 +1,22 @@
+@import "../style.scss";
+#app{
+    background-color: aquamarine;
+    #titre{
+        color: red;
+    }
+}
+#nestingTest{
+    background-color: aqua;
+    transition: 3s;
+    p{
+        color: purple;
+    }
+    &:hover{
+        background-color: orange;
+    }
+}
+#app{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%
+}

@@ -1,0 +1,40 @@
+@import "../style.scss";
+$alignement: center;
+$mainCouleur: lightblue;
+$fontType: arial;
+$transition: 3s ease-in-out;
+$margin: 30%;
+$marginTop: 5em;
+$titre: red;
+$texte: purple;
+$hover: lightpink;
+$image: 20em;
+$hoverImg: 5turn;
+#app{
+    text-align: $alignement;
+    margin-left: $margin;
+    margin-right: $margin;
+    h1{
+        color: $titre;
+    }
+}
+article{
+    font-style: $fontType;
+    p{
+        color: $texte;
+        transition: $transition;
+        background-color: $mainCouleur;
+        &:hover{
+            background-color: $hover;
+        }
+    }
+    img{
+        height: $image;
+        width: $image;
+        margin-top: $marginTop;
+        transition: $transition;
+        &:hover{
+            transform: rotate($hoverImg);
+        }
+    }
+}

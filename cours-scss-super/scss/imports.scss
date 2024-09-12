@@ -1,0 +1,8 @@
+@import "../style.scss";
+@import "variables.scss";
+body{
+    background-color: rgb(253, 225, 222)
+}
+article img:hover{
+    transform: scale(1.5);
+}
